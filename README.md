@@ -27,7 +27,7 @@ pip install --editable ./
 ```
 
 ### Step 1. Preparation
-```
+```bash
 
 ```
 #### Pretrained Models
@@ -44,15 +44,15 @@ The required datasets are:
 
 
 ### Step 2. Training
+```bash
 
-
+```
 
 
 ### Step 3. Evaluation
+```bash
 
-
-
-
+```
 
 
 ### Citation
