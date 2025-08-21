@@ -20,7 +20,8 @@ git clone https://github.com/Shuaque/Mob-AV-EMR.git
 cd Mob-AV-EMR
 ```
 ```bash
-pip install transformers
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+pip install transformers, opencv-python, accelerate
 
 cd fairseq
 pip install --editable ./

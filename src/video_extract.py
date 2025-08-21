@@ -8,9 +8,9 @@ from pathlib import Path
 from fairseq import checkpoint_utils, tasks, utils
 
 # ====== 你需要先准备这三样路径 ======
-CKPT = "/path/to/avhubert/checkpoint.pt"     # 预训练或下游ASR微调的 ckpt
-WAV  = "/path/to/video_audio_16k.wav"        # 从视频里抽出的 16kHz 单声道 wav
-FRAMES_DIR = "/path/to/roi_frames_25fps"     # 口型 ROI 帧目录, 命名 000001.png, 000002.png, ...
+CKPT = "/workspace/shuaque/Mob-AV-EMR/pretrained/avhubert/base_vox_iter5.pt"     # 预训练或下游ASR微调的 ckpt
+WAV  = "/workspace/shuaque/Data/corpus/LRW-1000-CORPUS/audio/audio/0a00ac918bf88c27735c8caf2b48f529.wav"        # 从视频里抽出的 16kHz 单声道 wav
+FRAMES_DIR = "/workspace/shuaque/Data/corpus/LRW-1000-CORPUS/image/images/0a00ac918bf88c27735c8caf2b48f529"     # 口型 ROI 帧目录, 命名 000001.png, 000002.png, ...
 
 # ====== 基础超参（与训练保持一致） ======
 IMG_SIZE = 88
